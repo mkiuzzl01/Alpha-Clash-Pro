@@ -74,21 +74,22 @@
                   </div>
             </div>
             <div class="flex justify-between w-5/6 text-white">
-                <div class="bg-[#894189] p-4 rounded-full">Life <i class="fa-solid fa-heart-circle-bolt"></i> <span>1</span></div>
-                <div class="bg-[#360490] p-4 rounded-full">Score <i class="fa-solid fa-dollar-sign"></i> <span>2</span></div>
+                <div class="bg-[#894189] p-4 rounded-full">Life <i class="fa-solid fa-heart-circle-bolt"></i> <span id="life">5</span></div>
+                <div class="bg-[#360490] p-4 rounded-full">Score <i class="fa-solid fa-dollar-sign"></i> <span id="score">0</span></div>
             </div>
             </div>
         </section>
       
-        <section class="hidden">
+        <section id="scoreBoard" class="hidden">
               <!-- Game Score -->
         <div class="flex items-center justify-center min-h-screen">
             <div class="text-white text-center space-y-3 bg-gradient-to-r from-fuchsia-300  to-violet-600 p-11 rounded-md">
+                <h1 class="text-6xl">Game Over!</h1>
                 <h1 class="text-6xl font-bold">
                     <span>Score:</span>
-                    <span>14</span>
+                    <span id="total-Score">12</span>
                 </h1>
-                <button class="btn btn-whit poppins-semibold text-xl">Play Again</button>
+                <button onclick="playNow()" class="btn btn-whit poppins-semibold text-xl">Play Again</button>
                 <p class="poppins-medium text-xl">Practice will make you Pro</p>
             </div>
         </div>
