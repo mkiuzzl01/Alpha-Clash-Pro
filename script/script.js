@@ -48,6 +48,12 @@ function setElementValue(element,value){
 function keyPress(event){
     const gamerPressKey = event.key;
 
+    if(gamerPressKey === 'Enter'){
+        playNow();
+    }else if (gamerPressKey === 'Escape'){
+        gameOver();
+    }
+
     //expected Press key
     const currentAlphabet = document.getElementById('showElement');
     const TargetPressKey = currentAlphabet.innerText;
@@ -88,7 +94,7 @@ function playNow(){
   setElementValue('score',0);
 
   removeClass('palyGround');
-  gameLoop();
+//   gameLoop();
 
 
 }
